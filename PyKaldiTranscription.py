@@ -54,7 +54,7 @@ def create_scp(data_path):
             fout.write("{} {}\n".format(wav_filename, wav_path))
 
 #Generate scp file
-create_scp(args["--input"])
+create_scp(args["input"])
 
 # Construct recognizer
 decoder_opts = LatticeFasterDecoderOptions()
